@@ -1,0 +1,23 @@
+/* Basic styling for demonstration purposes */
+body {
+    font-family: sans-serif;
+    background-color: black;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .burndown-chart {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Styling for draggable items */
+  .draggable {
+    cursor: move;
+} 
+
+/* Styling for capacity planning table */
+#capacityPlanningTable th,
+#capacityPlanningTable td {
+    text-align: center;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scrum Dashboard - Team</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <link rel="stylesheet" href="styles/scrum.css">
+</head>
+
+<body>
+    <nav>
+        <a href="scrum.html">Home</a>
+        <a href="scrum-backlog.html">Product Backlog</a>
+        <a href="sprint-backlog.html">Sprint Backlog</a>
+        <a href="teams.html">Team Members</a>
+        <a href="reports.html">Reports</a>
+    </nav>
+    <div class="container">
+        <h1>Scrum Dashboard - Team</h1>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">Team Members</div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Contact</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="teamMembersList">
+                                <!-- Team members will be added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Capacity Planning</div>
+                    <div class="card-body">
+                        <table class="table table-bordered" id="capacityPlanningTable">
+                            <thead>
+                                <tr>
+                                    <th>Team Member</th>
+                                    <th>Sprint 1</th>
+                                    <th>Sprint 2</th>
+                                    <th>Sprint 3</th>
+                                    <!-- Add more sprint columns as needed -->
+                                </tr>
+                            </thead>
+                            <tbody id="capacityPlanningData">
+                                <!-- Capacity planning data will be added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Availability Calendar</div>
+                    <div class="card-body">
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="js/teams.js"></script>
+
+</body>
+
+</html>
